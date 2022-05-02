@@ -1,0 +1,319 @@
+schema: '2.0'
+stages:
+  download_data:
+    cmd: Rscript R/build.R
+    deps:
+    - path: R/build.R
+      md5: e15295ea6c9342a9a888c1f4770bd8ee
+      size: 5991
+    outs:
+    - path: data/TCGA-ACC/clinical_drug_acc.parquet
+      md5: bfce0d55fcd82c6ae986f66bd0023e12
+      size: 24310
+    - path: data/TCGA-ACC/clinical_patient_acc.parquet
+      md5: 2baaf6c13b2e1b511c68a1fbedb765cd
+      size: 72960
+    - path: data/TCGA-ACC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 3f591035617f9de2841c1a8535344a36
+      size: 3749063
+    - path: data/TCGA-BLCA/clinical_drug_blca.parquet
+      md5: d6cd4ac9b17bb0c6834141e2e9fa2c73
+      size: 47629
+    - path: data/TCGA-BLCA/clinical_patient_blca.parquet
+      md5: d2466110b93d4b5d216ae8f869783184
+      size: 111587
+    - path: data/TCGA-BLCA/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: ed7ad15782df23af05eeff79c6fd2f4b
+      size: 47642057
+    - path: data/TCGA-BRCA/clinical_drug_brca.parquet
+      md5: cfd2c01d702d782e468c864f335569fb
+      size: 207067
+    - path: data/TCGA-BRCA/clinical_patient_brca.parquet
+      md5: 26d5fa6f54cc0afd952b06ea9e5dac34
+      size: 188374
+    - path: data/TCGA-BRCA/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: e2a47901e749ea63c8d10501ac92e3cd
+      size: 37680668
+    - path: data/TCGA-CESC/clinical_drug_cesc.parquet
+      md5: ef93497ee35543de24333e18d7bcd73a
+      size: 43109
+    - path: data/TCGA-CESC/clinical_patient_cesc.parquet
+      md5: 38c939d43c9ae203a004217c71a4a558
+      size: 153977
+    - path: data/TCGA-CESC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 389c205f9d1b0c8b30144cce5369aa98
+      size: 28359074
+    - path: data/TCGA-CHOL/clinical_drug_chol.parquet
+      md5: 4e8abd0c9abd9abc80c2839e98731d57
+      size: 24247
+    - path: data/TCGA-CHOL/clinical_patient_chol.parquet
+      md5: f0ffb9ebf05e2a2cfc9f371c036c44cb
+      size: 70123
+    - path: data/TCGA-CHOL/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 892200d2bf0453258a8f0683cb50a1ef
+      size: 1907103
+    - path: data/TCGA-COAD/clinical_drug_coad.parquet
+      md5: 6f88c94cb68cd90918f719ee17ee3d2b
+      size: 68890
+    - path: data/TCGA-COAD/clinical_patient_coad.parquet
+      md5: 27ac3144e4749d6c613f360c8b27748a
+      size: 112627
+    - path: data/TCGA-COAD/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: e32e9fc2a88608833ecb05d4a75ab8c8
+      size: 97063893
+    - path: data/TCGA-DLBC/clinical_drug_dlbc.parquet
+      md5: 0e18864773e2f95bb2db144f38079751
+      size: 32822
+    - path: data/TCGA-DLBC/clinical_patient_dlbc.parquet
+      md5: 852238dcab08a3b6f16f1610b9dc4099
+      size: 101391
+    - path: data/TCGA-DLBC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: bc55affcd7acb4f2135408d357c504d2
+      size: 3151745
+    - path: data/TCGA-ESCA/clinical_drug_esca.parquet
+      md5: cb2ec9d8551857b7a03f90c4d93f8aa6
+      size: 30430
+    - path: data/TCGA-ESCA/clinical_patient_esca.parquet
+      md5: 8f7b8e646cb5eb63752c0cd8563fde21
+      size: 84195
+    - path: data/TCGA-ESCA/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: b93a268d7b254a21f81d97f8bbb9894e
+      size: 12953306
+    - path: data/TCGA-GBM/clinical_drug_gbm.parquet
+      md5: b55b7a5ad693a6f26732ccd19e043502
+      size: 137599
+    - path: data/TCGA-GBM/clinical_patient_gbm.parquet
+      md5: c9f66ae6f586c105dad592c86a65a0df
+      size: 74222
+    - path: data/TCGA-GBM/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 9ddce90af45cebc3f06759bf73bb0257
+      size: 21987390
+    - path: data/TCGA-HNSC/clinical_drug_hnsc.parquet
+      md5: 1393f0db4286707a219db5f703508321
+      size: 54919
+    - path: data/TCGA-HNSC/clinical_patient_hnsc.parquet
+      md5: ed1c23cf3e9126a94c649b501da04ec3
+      size: 100250
+    - path: data/TCGA-HNSC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 8a621b25368dbf500a398b9049de2570
+      size: 36039946
+    - path: data/TCGA-KICH/clinical_drug_kich.parquet
+      md5: 098a6f8d8a23d7a18483920fad6c58e1
+      size: 17671
+    - path: data/TCGA-KICH/clinical_patient_kich.parquet
+      md5: 55a49c5710976fda556418997eaa440e
+      size: 53258
+    - path: data/TCGA-KICH/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 9418350fe79af8aacf777c2b0b8b00c1
+      size: 1246746
+    - path: data/TCGA-KIRC/clinical_drug_kirc.parquet
+      md5: 3fb5abd7fbe9c1e3e3a7bd2d9d81bd71
+      size: 40294
+    - path: data/TCGA-KIRC/clinical_patient_kirc.parquet
+      md5: 724ed00c38039f84b00afdb643183347
+      size: 87153
+    - path: data/TCGA-KIRC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 013f46ea4a8961052259f772b2169ed6
+      size: 10118845
+    - path: data/TCGA-KIRP/clinical_drug_kirp.parquet
+      md5: 6b42eb940917abfd3874cc4b31c04031
+      size: 28216
+    - path: data/TCGA-KIRP/clinical_patient_kirp.parquet
+      md5: 2e14f966a02978d8ac800e8eaf90244f
+      size: 74980
+    - path: data/TCGA-KIRP/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 187cb55b45649df26e2bec8d2834ebcd
+      size: 8918665
+    - path: data/TCGA-LAML/clinical_patient_laml.parquet
+      md5: 0d20937e3029459eb41b30b06246652b
+      size: 94570
+    - path: data/TCGA-LAML/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 281f139926b25d5ea883b47e2461020a
+      size: 1980770
+    - path: data/TCGA-LGG/clinical_drug_lgg.parquet
+      md5: a61a16b0ff5c1e15a305ed009128e342
+      size: 82500
+    - path: data/TCGA-LGG/clinical_patient_lgg.parquet
+      md5: 7be988bd0dacbc3aa33d59a3ab461f30
+      size: 97041
+    - path: data/TCGA-LGG/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 5c000d59d2f78ca9447ac8be303819bf
+      size: 14050537
+    - path: data/TCGA-LIHC/clinical_drug_lihc.parquet
+      md5: 7aebfdb30a0354e58ba2f50eb6a365c3
+      size: 30441
+    - path: data/TCGA-LIHC/clinical_patient_lihc.parquet
+      md5: 1bdb13d0633a7ee7b63df05e28509cdd
+      size: 99083
+    - path: data/TCGA-LIHC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 7b8e75b0f26e427166ed40657577df4f
+      size: 19339208
+    - path: data/TCGA-LUAD/clinical_drug_luad.parquet
+      md5: afab2d649ffe8e25da38b543b3e5b54f
+      size: 61651
+    - path: data/TCGA-LUAD/clinical_patient_luad.parquet
+      md5: c3f59abf1145d66f89d6a4f276769957
+      size: 144131
+    - path: data/TCGA-LUAD/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 324531c023438516cebc50c9d072313d
+      size: 71900017
+    - path: data/TCGA-LUSC/clinical_drug_lusc.parquet
+      md5: 11d852800683c0ebe73e497be58f759f
+      size: 54245
+    - path: data/TCGA-LUSC/clinical_patient_lusc.parquet
+      md5: ca83fae0ae614737cc9936f29692d07e
+      size: 128933
+    - path: data/TCGA-LUSC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 6ac5ebd451d32942e33d9967f1bfc579
+      size: 65044591
+    - path: data/TCGA-MESO/clinical_drug_meso.parquet
+      md5: 590c7fa4c17c74ece6a2462da048d8f9
+      size: 36656
+    - path: data/TCGA-MESO/clinical_patient_meso.parquet
+      md5: a95dc1c74ae701c97c37a5946d4c9731
+      size: 62441
+    - path: data/TCGA-MESO/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 93bcfadec69efb78d47e740d069fc6d9
+      size: 1431707
+    - path: data/TCGA-OV/clinical_drug_ov.parquet
+      md5: 9b205865620f54e959ca5e25c9dec09d
+      size: 197683
+    - path: data/TCGA-OV/clinical_patient_ov.parquet
+      md5: e13f569d996840f6f860668d24839547
+      size: 86729
+    - path: data/TCGA-OV/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 1a3b852c9ee0b37a8cc91439a0ef4588
+      size: 17322655
+    - path: data/TCGA-PAAD/clinical_drug_paad.parquet
+      md5: edd58ae247dc2f4587bd1ae72e128a24
+      size: 44420
+    - path: data/TCGA-PAAD/clinical_patient_paad.parquet
+      md5: ea4bd3a52bca6cc5289d38e635d7456e
+      size: 78624
+    - path: data/TCGA-PCPG/clinical_drug_pcpg.parquet
+      md5: 53b72f2385669334e765dae50103a308
+      size: 23975
+    - path: data/TCGA-PCPG/clinical_patient_pcpg.parquet
+      md5: 45a20e73d0bd396ab5495143dbeeb163
+      size: 47422
+    - path: data/TCGA-PCPG/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 7a45117503eaf19d7a4d97ae741ef07f
+      size: 1069487
+    - path: data/TCGA-PRAD/clinical_drug_prad.parquet
+      md5: cf68442bcc7a02b75e1e05061d1ef76d
+      size: 35662
+    - path: data/TCGA-PRAD/clinical_patient_prad.parquet
+      md5: 2d6172f75eeaa573dfe22e0550c4cc67
+      size: 98384
+    - path: data/TCGA-PRAD/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 3b952435f57419790b7af6ef05c5719e
+      size: 11161151
+    - path: data/TCGA-READ/clinical_drug_read.parquet
+      md5: 947c5de6e817ef12bc91593607f99df3
+      size: 42782
+    - path: data/TCGA-READ/clinical_patient_read.parquet
+      md5: fa788d963d02bb33e0957b02191cadf9
+      size: 76767
+    - path: data/TCGA-READ/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 50bfeda37e45bc25d2b019f6fd7125a9
+      size: 22797650
+    - path: data/TCGA-SARC/clinical_drug_sarc.parquet
+      md5: e081ba340477cfd4ea84afec4a9931be
+      size: 40288
+    - path: data/TCGA-SARC/clinical_patient_sarc.parquet
+      md5: c1533d64da7485108d760b1551c8412f
+      size: 83099
+    - path: data/TCGA-SARC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: d901c44faea9f0a6e7137cbbf815e645
+      size: 7693010
+    - path: data/TCGA-SKCM/clinical_drug_skcm.parquet
+      md5: d171df9a9d3d8ae539c7110889203e5b
+      size: 48788
+    - path: data/TCGA-SKCM/clinical_patient_skcm.parquet
+      md5: 56f8eccc19cef5d183209fecdbec194c
+      size: 92762
+    - path: data/TCGA-STAD/clinical_drug_stad.parquet
+      md5: 36259eef34a89b202afe1247f2ee4239
+      size: 59790
+    - path: data/TCGA-STAD/clinical_patient_stad.parquet
+      md5: 3aeaa7720376fa8e3d09a9f04099c693
+      size: 85059
+    - path: data/TCGA-STAD/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 70df855823b9b189ea2fd0133ab713ef
+      size: 73230573
+    - path: data/TCGA-TGCT/clinical_drug_tgct.parquet
+      md5: b9ce126cc18aec80681a9b05d5798fac
+      size: 35650
+    - path: data/TCGA-TGCT/clinical_patient_tgct.parquet
+      md5: ff3536c62536823c6868dc4ba6404a59
+      size: 86604
+    - path: data/TCGA-TGCT/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: bde6edf674cdc71172000dd2b8256057
+      size: 1419393
+    - path: data/TCGA-THCA/clinical_drug_thca.parquet
+      md5: 9d0e77f3d2e063b7e3a1b5578ff527a9
+      size: 28834
+    - path: data/TCGA-THCA/clinical_patient_thca.parquet
+      md5: 23c73f820b7c03dc162187dc9e9013c1
+      size: 105622
+    - path: data/TCGA-THCA/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 130c83f0e71efd5c3253b30a35358299
+      size: 2903363
+    - path: data/TCGA-THYM/clinical_drug_thym.parquet
+      md5: aac0f4cdeaf35c6fb26b5cb07c3b6e74
+      size: 24619
+    - path: data/TCGA-THYM/clinical_patient_thym.parquet
+      md5: 121b83d38ea45d090e795754982d7da4
+      size: 47529
+    - path: data/TCGA-THYM/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 5fd7107d990da14d2c42d344de8c6074
+      size: 1296954
+    - path: data/TCGA-UCEC/clinical_drug_ucec.parquet
+      md5: 445b322b0fd483382e153ce772333ca0
+      size: 64684
+    - path: data/TCGA-UCEC/clinical_patient_ucec.parquet
+      md5: e92d039a0195b50522303b2325c27afa
+      size: 100197
+    - path: data/TCGA-UCEC/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 463e8a9dc4290f06d30b40410b8f3946
+      size: 224377033
+    - path: data/TCGA-UCS/clinical_drug_ucs.parquet
+      md5: b0d03db5fcfddd3388221bbb89d1c5c6
+      size: 30714
+    - path: data/TCGA-UCS/clinical_patient_ucs.parquet
+      md5: 44b042c225982e6575fc91bf63c03541
+      size: 57971
+    - path: data/TCGA-UCS/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 3fc231cdd6f985188f89c6772e96e173
+      size: 4061149
+    - path: data/TCGA-UVM/clinical_drug_uvm.parquet
+      md5: 3860a6fa24cfc088409128f40296df32
+      size: 23079
+    - path: data/TCGA-UVM/clinical_patient_uvm.parquet
+      md5: 52efe6469d276dde77a59e4cc7732e91
+      size: 59770
+    - path: data/TCGA-UVM/wxs.aliquot_ensemble_masked.maf.parquet
+      md5: 65437e3f41269cc8bf4720a1936a68d0
+      size: 825271
+    - path: data/combined.wxs.aliquot_ensemble_masked.maf.parquet
+      md5: a7c7dad8965ad19f9230d9a623f69e2c
+      size: 812067144
+    - path: data/combined_clinical_drug.parquet
+      md5: 3c50ac5aba7877d0c9894861127fe15a
+      size: 992232
+    - path: data/combined_clinical_patient.parquet
+      md5: 1d912ce58bb89813893973d5df47e1d3
+      size: 1497201
+  add_cases:
+    cmd: Rscript R/add_cases.R
+    deps:
+    - path: R/add_cases.R
+      md5: b5db51527f7d1d92b6a61f2c1083114d
+      size: 651
+    - path: data/combined.wxs.aliquot_ensemble_masked.maf.parquet
+      md5: a7c7dad8965ad19f9230d9a623f69e2c
+      size: 812067144
+    outs:
+    - path: data/gdc2tcga.parquet
+      md5: 1993943e6b0cbe7191cbb29eeb276fe5
+      size: 427889
