@@ -6,6 +6,7 @@ dependencies:
   - name: GDC
     url: https://portal.gdc.cancer.gov/
 ---
+<a href="https://github.com/biobricks-ai/gdc/actions"><img src="https://github.com/biobricks-ai/gdc/actions/workflows/bricktools-check.yaml/badge.svg?branch=master"/></a>
 
 This directory contains data that was obtained from the Genetic Data Commons
 
